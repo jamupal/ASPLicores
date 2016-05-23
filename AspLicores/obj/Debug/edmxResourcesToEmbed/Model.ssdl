@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_AspLicoresModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="detalle_Factura">
+    <Key>
+      <PropertyRef Name="idDetalle" />
+    </Key>
+    <Property Name="idDetalle" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codigo_Producto" Type="int" Nullable="false" />
+    <Property Name="cantidad" Type="int" Nullable="false" />
+    <Property Name="valor" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="codigo_Factura" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="factura">
+    <Key>
+      <PropertyRef Name="idFactura" />
+    </Key>
+    <Property Name="idFactura" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="subtTotal" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="cedula" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="iva" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Total" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="licores">
+    <Key>
+      <PropertyRef Name="idLicor" />
+    </Key>
+    <Property Name="idLicor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varbinary" MaxLength="200" Nullable="false" />
+    <Property Name="precio" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="cantidad" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="cedula" />
+    </Key>
+    <Property Name="cedula" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="direccion" Type="varchar" MaxLength="100" />
+    <Property Name="email" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="fecha nacimiento" Type="date" />
+    <Property Name="telefono" Type="varchar" MaxLength="50" />
+    <Property Name="targetaCredito" Type="varchar" MaxLength="50" />
+    <Property Name="nombre" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="password" Type="varchar(max)" Nullable="false" />
+    <Property Name="perfil_usuario" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_detalle_Factura_factura">
+    <End Role="factura" Type="Self.factura" Multiplicity="1" />
+    <End Role="detalle_Factura" Type="Self.detalle_Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="factura">
+        <PropertyRef Name="idFactura" />
+      </Principal>
+      <Dependent Role="detalle_Factura">
+        <PropertyRef Name="codigo_Factura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_detalle_Factura_licores">
+    <End Role="licores" Type="Self.licores" Multiplicity="1" />
+    <End Role="detalle_Factura" Type="Self.detalle_Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="licores">
+        <PropertyRef Name="idLicor" />
+      </Principal>
+      <Dependent Role="detalle_Factura">
+        <PropertyRef Name="codigo_Producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_factura_usuario">
+    <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+    <End Role="factura" Type="Self.factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="cedula" />
+      </Principal>
+      <Dependent Role="factura">
+        <PropertyRef Name="cedula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_AspLicoresModelStoreContainer">
+    <EntitySet Name="detalle_Factura" EntityType="Self.detalle_Factura" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="factura" EntityType="Self.factura" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="licores" EntityType="Self.licores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_detalle_Factura_factura" Association="Self.FK_detalle_Factura_factura">
+      <End Role="factura" EntitySet="factura" />
+      <End Role="detalle_Factura" EntitySet="detalle_Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_detalle_Factura_licores" Association="Self.FK_detalle_Factura_licores">
+      <End Role="licores" EntitySet="licores" />
+      <End Role="detalle_Factura" EntitySet="detalle_Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_factura_usuario" Association="Self.FK_factura_usuario">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="factura" EntitySet="factura" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

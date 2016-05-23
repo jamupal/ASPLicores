@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_AspLicoresModelStoreContainer" CdmEntityContainer="Entidad">
+    <EntitySetMapping Name="detalle_Factura">
+      <EntityTypeMapping TypeName="DB_AspLicoresModel.detalle_Factura">
+        <MappingFragment StoreEntitySet="detalle_Factura">
+          <ScalarProperty Name="idDetalle" ColumnName="idDetalle" />
+          <ScalarProperty Name="codigo_Producto" ColumnName="codigo_Producto" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="codigo_Factura" ColumnName="codigo_Factura" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="factura">
+      <EntityTypeMapping TypeName="DB_AspLicoresModel.factura">
+        <MappingFragment StoreEntitySet="factura">
+          <ScalarProperty Name="idFactura" ColumnName="idFactura" />
+          <ScalarProperty Name="subtTotal" ColumnName="subtTotal" />
+          <ScalarProperty Name="cedula" ColumnName="cedula" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="iva" ColumnName="iva" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="licores">
+      <EntityTypeMapping TypeName="DB_AspLicoresModel.licores">
+        <MappingFragment StoreEntitySet="licores">
+          <ScalarProperty Name="idLicor" ColumnName="idLicor" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="DB_AspLicoresModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="cedula" ColumnName="cedula" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="fecha_nacimiento" ColumnName="fecha nacimiento" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="targetaCredito" ColumnName="targetaCredito" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="perfil_usuario" ColumnName="perfil_usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
