@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DB_AspLicoresModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DB_AspLicoresModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="detalle_Factura">
           <Key>
             <PropertyRef Name="idDetalle" />
@@ -49,6 +49,7 @@
           <Property Name="username" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="password" Type="varchar(max)" Nullable="false" />
           <Property Name="perfil_usuario" Type="int" Nullable="false" />
+          <Property Name="Estado" Type="int" Nullable="false" />
         </EntityType>
         <Association Name="FK_detalle_Factura_factura">
           <End Role="factura" Type="Self.factura" Multiplicity="1" />
@@ -104,8 +105,7 @@
             <End Role="factura" EntitySet="factura" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DB_AspLicoresModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -159,6 +159,7 @@
           <Property Name="password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="perfil_usuario" Type="Int32" Nullable="false" />
           <NavigationProperty Name="factura" Relationship="Self.FK_factura_usuario" FromRole="usuario" ToRole="factura" />
+          <Property Name="Estado" Type="Int32" Nullable="false" />
         </EntityType>
         <Association Name="FK_detalle_Factura_factura">
           <End Role="factura" Type="Self.factura" Multiplicity="1" />
@@ -256,6 +257,7 @@
           <EntitySetMapping Name="usuario">
             <EntityTypeMapping TypeName="DB_AspLicoresModel.usuario">
               <MappingFragment StoreEntitySet="usuario">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
                 <ScalarProperty Name="cedula" ColumnName="cedula" />
                 <ScalarProperty Name="direccion" ColumnName="direccion" />
                 <ScalarProperty Name="email" ColumnName="email" />

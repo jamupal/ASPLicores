@@ -30,6 +30,7 @@ namespace AspLicores
         public string username { get; set; }
         public string password { get; set; }
         public int perfil_usuario { get; set; }
+        public int Estado { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<factura> factura { get; set; }
