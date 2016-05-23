@@ -1,21 +1,55 @@
-﻿<%@ Page Title="Registrarse" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="AspLicores.Account.Register" %>
+﻿<%@ Page Title="Crea tu cuenta de ASPLicores" Language="C#" MasterPageFile="~/PrincipalSesion.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="AspLicores.Account.Register" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <h2><%: Title %>.</h2>
+    <h2><%: Title %></h2>
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
     </p>
 
-    <div class="form-horizontal">
-        <h4>Crear una nueva cuenta</h4>
+    <div class="row form-horizontal">
         <hr />
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
         <div class="form-group">
-            <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 control-label">Correo electrónico</asp:Label>
+            <asp:Label runat="server" ID="Nombre" CssClass="col-md-2 control-label">Nombres</asp:Label>
             <div class="col-md-10">
-                <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
-                <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
-                    CssClass="text-danger" ErrorMessage="El campo de correo electrónico es obligatorio." />
+                <asp:TextBox runat="server" ID="Nombres" CssClass="form-control" type="text" MaxLength="200" required="required"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <asp:Label runat="server" ID="Direccion" CssClass="col-md-2 control-label">Direccion</asp:Label>
+            <div class="col-md-10">
+                <asp:TextBox runat="server" ID="Direccion1" CssClass="form-control" type="text" MaxLength="100" required="required"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <asp:Label runat="server" ID="Email1" CssClass="col-md-2 control-label">Correo electrónico</asp:Label>
+            <div class="col-md-10">
+                <asp:TextBox runat="server" ID="Email2" CssClass="form-control" type="email" MaxLength="100" required="required" />
+               
+            </div>
+        </div>
+        <div class="form-group">
+            <asp:Label runat="server" ID="Fecha_nacimiento" CssClass="col-md-2 control-label">Fecha de nacimiento</asp:Label>
+            <div class="col-md-3">
+                <asp:TextBox runat="server" ID="Fecha_nacimiento1" CssClass="form-control" TextMode="Date" required="required"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <asp:Label runat="server" ID="telefono" CssClass="col-md-2 control-label">Telefono</asp:Label>
+            <div class="col-md-10">
+                <asp:TextBox runat="server" ID="telefono1" CssClass="form-control" TextMode="Phone" MaxLength="50" required="required"/>
+            </div>
+        </div>
+            <div class="form-group">
+            <asp:Label runat="server" ID="tarjetaCredito" CssClass="col-md-2 control-label">Numero de Tarjeta de Credito</asp:Label>
+            <div class="col-md-3">
+                <asp:TextBox runat="server" ID="tarjetaCredito1" CssClass="form-control" MaxLength="50" TextMode="Number" requiered="requiered"/>
+            </div>
+        </div>
+           <div class="form-group">
+            <asp:Label runat="server" ID="username" CssClass="col-md-2 control-label">Nombre Usuario</asp:Label>
+            <div class="col-md-10">
+                <asp:TextBox runat="server" ID="username1" CssClass="form-control" MaxLength="100" Type="text" requiered="requiered"/>
             </div>
         </div>
         <div class="form-group">
