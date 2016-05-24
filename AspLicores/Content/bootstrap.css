@@ -3945,7 +3945,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-justified {
-  width: 100%;
+  width: 31%;
+    height: 354px;
 }
 
 .nav-justified > li {

@@ -214,6 +214,10 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="img\exportar_datos.png" />
+    <Content Include="img\productos.png" />
+    <Content Include="img\User2.png" />
+    <Content Include="img\User_icon.png" />
     <Content Include="Sesion.aspx" />
     <EntityDeploy Include="Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -224,6 +228,7 @@
     </Content>
     <Content Include="PrincipalSesion.Master" />
     <Content Include="Admin.Master" />
+    <Content Include="img\Duff_Man.png" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
