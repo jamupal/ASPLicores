@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="CtrUsuarios.aspx.cs" Inherits="AspLicores.pags.CtrUsuarios" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/pags/Admin.Master" AutoEventWireup="true" CodeBehind="CtrUsuarios.aspx.cs" Inherits="AspLicores.pags.CtrUsuarios" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>

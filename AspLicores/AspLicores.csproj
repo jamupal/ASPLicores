@@ -223,6 +223,7 @@
     <Content Include="img\User_icon.png" />
     <Content Include="pags\CtrLicores.aspx" />
     <Content Include="pags\CtrUsuarios.aspx" />
+    <Content Include="pags\Mi_Cuenta.aspx" />
     <Content Include="Sesion.aspx" />
     <EntityDeploy Include="Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -232,8 +233,8 @@
       <DependentUpon>Model.edmx</DependentUpon>
     </Content>
     <Content Include="PrincipalSesion.Master" />
-    <Content Include="Admin.Master" />
     <Content Include="img\Duff_Man.png" />
+    <Content Include="pags\Admin.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -401,13 +402,6 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin.Master.cs">
-      <DependentUpon>Admin.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin.Master.designer.cs">
-      <DependentUpon>Admin.Master</DependentUpon>
-    </Compile>
     <Compile Include="pags\AdminPage.aspx.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -481,6 +475,20 @@
     </Compile>
     <Compile Include="pags\CtrUsuarios.aspx.designer.cs">
       <DependentUpon>CtrUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pags\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pags\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pags\Mi_Cuenta.aspx.cs">
+      <DependentUpon>Mi_Cuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pags\Mi_Cuenta.aspx.designer.cs">
+      <DependentUpon>Mi_Cuenta.aspx</DependentUpon>
     </Compile>
     <Compile Include="PrincipalSesion.Master.cs">
       <DependentUpon>PrincipalSesion.Master</DependentUpon>
