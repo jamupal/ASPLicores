@@ -82,8 +82,4 @@
             </asp:GridView>
         </div>
     </form>
-
-
-
-
 </asp:Content>
