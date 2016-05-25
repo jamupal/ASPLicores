@@ -201,6 +201,8 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="img\check.png" />
+    <Content Include="img\cross1.png" />
     <Content Include="img\cross.png" />
     <Content Include="img\lapiz.png" />
     <Content Include="pags\AdminPage.aspx" />
@@ -219,6 +221,7 @@
     <Content Include="img\exportar_datos.png" />
     <Content Include="img\productos.png" />
     <Content Include="img\User_icon.png" />
+    <Content Include="pags\CtrLicores.aspx" />
     <Content Include="pags\CtrUsuarios.aspx" />
     <Content Include="Sesion.aspx" />
     <EntityDeploy Include="Model.edmx">
@@ -465,6 +468,13 @@
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="pags\CtrLicores.aspx.cs">
+      <DependentUpon>CtrLicores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pags\CtrLicores.aspx.designer.cs">
+      <DependentUpon>CtrLicores.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pags\CtrUsuarios.aspx.cs">
       <DependentUpon>CtrUsuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

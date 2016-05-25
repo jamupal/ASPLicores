@@ -1,5 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminPage.aspx.cs" Inherits="AspLicores.AdminPage" %>
+﻿<%@ Page Title="Seleccione una operación" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminPage.aspx.cs" Inherits="AspLicores.AdminPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <h2><%: Title %></h2>
     <table style="width: 100%">
         <tr>
             <td>&nbsp;</td>
