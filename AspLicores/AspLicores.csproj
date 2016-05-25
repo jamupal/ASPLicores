@@ -201,7 +201,9 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="AdminPage.aspx" />
+    <Content Include="img\cross.png" />
+    <Content Include="img\lapiz.png" />
+    <Content Include="pags\AdminPage.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -216,8 +218,8 @@
     </Content>
     <Content Include="img\exportar_datos.png" />
     <Content Include="img\productos.png" />
-    <Content Include="img\User2.png" />
     <Content Include="img\User_icon.png" />
+    <Content Include="pags\CtrUsuarios.aspx" />
     <Content Include="Sesion.aspx" />
     <EntityDeploy Include="Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -403,11 +405,11 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="AdminPage.aspx.cs">
+    <Compile Include="pags\AdminPage.aspx.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminPage.aspx.designer.cs">
+    <Compile Include="pags\AdminPage.aspx.designer.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -463,6 +465,13 @@
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="pags\CtrUsuarios.aspx.cs">
+      <DependentUpon>CtrUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pags\CtrUsuarios.aspx.designer.cs">
+      <DependentUpon>CtrUsuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PrincipalSesion.Master.cs">
       <DependentUpon>PrincipalSesion.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
