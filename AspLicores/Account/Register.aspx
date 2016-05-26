@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="Crea tu cuenta de ASPLicores" Language="C#" MasterPageFile="~/PrincipalSesion.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="AspLicores.Account.Register" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-
     <h2><%: Title %></h2>
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
@@ -11,22 +10,15 @@
         <hr />
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
         <div class="form-group">
-            <asp:Label runat="server" ID="lblDocumento" CssClass="col-md-2 control-label">Documento</asp:Label>
+            <asp:Label runat="server" ID="Nombre" CssClass="col-md-2 control-label">Nombres</asp:Label>
             <div class="col-md-10">
-                <asp:TextBox runat="server" ID="txtCedula" CssClass="form-control" type="text" MaxLength="200" required="required"/>
-                <asp:Label ID="lblerrordoc" runat="server" CssClass="text-danger"></asp:Label>
+                <asp:TextBox runat="server" ID="Nombres" CssClass="form-control" type="text" MaxLength="200" required="required"/>
             </div>
         </div>
         <div class="form-group">
-            <asp:Label runat="server" ID="lblNombre" CssClass="col-md-2 control-label">Nombres</asp:Label>
+            <asp:Label runat="server" ID="Direccion" CssClass="col-md-2 control-label">Direccion</asp:Label>
             <div class="col-md-10">
-                <asp:TextBox runat="server" ID="txtNombres" CssClass="form-control" type="text" MaxLength="200" required="required"/>
-            </div>
-        </div>
-        <div class="form-group">
-            <asp:Label runat="server" ID="lblDireccion" CssClass="col-md-2 control-label">Direccion</asp:Label>
-            <div class="col-md-10">
-                <asp:TextBox runat="server" ID="txtDireccion1" CssClass="form-control" type="text" MaxLength="100" required="required"/>
+                <asp:TextBox runat="server" ID="Direccion1" CssClass="form-control" type="text" MaxLength="100" required="required"/>
             </div>
         </div>
         <div class="form-group">
@@ -37,30 +29,27 @@
             </div>
         </div>
         <div class="form-group">
-            <asp:Label runat="server" ID="lblFecha_nacimiento" CssClass="col-md-2 control-label">Fecha de nacimiento</asp:Label>
+            <asp:Label runat="server" ID="Fecha_nacimiento" CssClass="col-md-2 control-label">Fecha de nacimiento</asp:Label>
             <div class="col-md-3">
-                <asp:TextBox runat="server" ID="txtFecha_nacimiento1" CssClass="form-control" TextMode="Date" required="required"/>
-                 <asp:Label ID="lblerroredad" runat="server" CssClass="text-danger"></asp:Label>
+                <asp:TextBox runat="server" ID="Fecha_nacimiento1" CssClass="form-control" TextMode="Date" required="required"/>
             </div>
-
         </div>
         <div class="form-group">
-            <asp:Label runat="server" ID="lbltelefono" CssClass="col-md-2 control-label">Telefono</asp:Label>
+            <asp:Label runat="server" ID="telefono" CssClass="col-md-2 control-label">Telefono</asp:Label>
             <div class="col-md-10">
-                <asp:TextBox runat="server" ID="txttelefono" CssClass="form-control" TextMode="Phone" MaxLength="50" required="required"/>
+                <asp:TextBox runat="server" ID="telefono1" CssClass="form-control" TextMode="Phone" MaxLength="50" required="required"/>
             </div>
         </div>
             <div class="form-group">
-            <asp:Label runat="server" ID="lbltarjetaCredito" CssClass="col-md-2 control-label">Numero de Tarjeta de Credito</asp:Label>
+            <asp:Label runat="server" ID="tarjetaCredito" CssClass="col-md-2 control-label">Numero de Tarjeta de Credito</asp:Label>
             <div class="col-md-3">
-                <asp:TextBox runat="server" ID="txttarjetaCredito1" CssClass="form-control" MaxLength="50" TextMode="Number" requiered="requiered"/>
+                <asp:TextBox runat="server" ID="tarjetaCredito1" CssClass="form-control" MaxLength="50" TextMode="Number" requiered="requiered"/>
             </div>
         </div>
            <div class="form-group">
-            <asp:Label runat="server" ID="lblusername" CssClass="col-md-2 control-label">Nombre Usuario</asp:Label>
+            <asp:Label runat="server" ID="username" CssClass="col-md-2 control-label">Nombre Usuario</asp:Label>
             <div class="col-md-10">
-                <asp:TextBox runat="server" ID="txtusername1" CssClass="form-control" MaxLength="100" Type="text" requiered="requiered"/>
-                <asp:Label ID="lblerroruser" runat="server" CssClass="text-danger"></asp:Label>
+                <asp:TextBox runat="server" ID="username1" CssClass="form-control" MaxLength="100" Type="text" requiered="requiered"/>
             </div>
         </div>
         <div class="form-group">
@@ -83,8 +72,7 @@
         </div>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btn btn-default" OnClick="btnCancelar_Click" />&nbsp;
-                <asp:Button runat="server" ID="btnregistrar" OnClick="CreateUser_Click" Text="Registrarse" CssClass="btn btn-default" />
+                <asp:Button runat="server" OnClick="CreateUser_Click" Text="Registrarse" CssClass="btn btn-default" />
             </div>
         </div>
     </div>

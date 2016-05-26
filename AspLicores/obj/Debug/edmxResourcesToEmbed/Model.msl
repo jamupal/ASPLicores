@@ -37,7 +37,6 @@
     <EntitySetMapping Name="usuario">
       <EntityTypeMapping TypeName="DB_AspLicoresModel.usuario">
         <MappingFragment StoreEntitySet="usuario">
-          <ScalarProperty Name="Estado" ColumnName="Estado" />
           <ScalarProperty Name="cedula" ColumnName="cedula" />
           <ScalarProperty Name="direccion" ColumnName="direccion" />
           <ScalarProperty Name="email" ColumnName="email" />

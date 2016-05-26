@@ -210,36 +210,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Content\sweetalert-master\dev\gulpfile-wrap-template.js" />
-    <Content Include="Content\sweetalert-master\dev\ie9.css" />
-    <Content Include="Content\sweetalert-master\dev\modules\default-params.js" />
-    <Content Include="Content\sweetalert-master\dev\modules\handle-click.js" />
-    <Content Include="Content\sweetalert-master\dev\modules\handle-dom.js" />
-    <Content Include="Content\sweetalert-master\dev\modules\handle-key.js" />
-    <Content Include="Content\sweetalert-master\dev\modules\handle-swal-dom.js" />
-    <Content Include="Content\sweetalert-master\dev\modules\injected-html.js" />
-    <Content Include="Content\sweetalert-master\dev\modules\set-params.js" />
-    <Content Include="Content\sweetalert-master\dev\modules\utils.js" />
-    <Content Include="Content\sweetalert-master\dev\sweetalert.es6.js" />
-    <Content Include="Content\sweetalert-master\dist\sweetalert-dev.js" />
-    <Content Include="Content\sweetalert-master\dist\sweetalert.css" />
-    <Content Include="Content\sweetalert-master\dist\sweetalert.min.js" />
-    <Content Include="Content\sweetalert-master\example\example.css" />
-    <Content Include="Content\sweetalert-master\example\images\logo_big%402x.png" />
-    <Content Include="Content\sweetalert-master\example\images\logo_big.png" />
-    <Content Include="Content\sweetalert-master\example\images\logo_small%402x.png" />
-    <Content Include="Content\sweetalert-master\example\images\logo_small.png" />
-    <Content Include="Content\sweetalert-master\example\images\te-logo-small.svg" />
-    <Content Include="Content\sweetalert-master\example\images\thumbs-up.jpg" />
-    <Content Include="Content\sweetalert-master\example\images\vs_icon%402x.png" />
-    <Content Include="Content\sweetalert-master\example\images\vs_icon.png" />
-    <Content Include="Content\sweetalert-master\gulpfile.js" />
-    <Content Include="Content\sweetalert-master\index.html" />
-    <Content Include="Content\sweetalert-master\sweetalert.gif" />
-    <Content Include="Content\sweetalert-master\themes\facebook\facebook.css" />
-    <Content Include="Content\sweetalert-master\themes\google\google.css" />
-    <Content Include="Content\sweetalert-master\themes\twitter\twitter.css" />
-    <Content Include="Content\sweetalert-master\_gitignore.txt" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -265,6 +235,7 @@
     <Content Include="PrincipalSesion.Master" />
 <<<<<<< HEAD
     <Content Include="Admin.Master" />
+<<<<<<< HEAD
     <Content Include="Content\sweetalert-master\bower.json" />
     <Content Include="Content\sweetalert-master\dev\sweetalert.scss" />
     <Content Include="Content\sweetalert-master\example\example.scss" />
@@ -280,6 +251,8 @@
     <Content Include="img\Duff_Man.png" />
     <Content Include="pags\Admin.Master" />
 >>>>>>> origin/juanjo
+=======
+>>>>>>> parent of d7c9f34... se actualiza codigo
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -543,7 +516,6 @@
       <DependentUpon>PrincipalSesion.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Segurida.cs" />
     <Compile Include="Sesion.aspx.cs">
       <DependentUpon>Sesion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
