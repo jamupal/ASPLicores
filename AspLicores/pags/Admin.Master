@@ -76,10 +76,13 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hola, <%: Context.User.Identity.GetUserName()  %> !</a></li>
                                 <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Cerrar sesión" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                    <li><a runat="server" href="~/pags/Mi_Cuenta">Mi Cuenta</a></li>
                                 </li>
                                 <li>
-                                    <li><a runat="server" href="~/pags/Mi_Cuenta">Mi Cuenta</a></li>
+                                    <li><a runat="server" href="~/pags/AdminPage">Administrar</a></li>
+                                </li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Cerrar sesión" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
                                 </li>
                             </ul>
                         </LoggedInTemplate>

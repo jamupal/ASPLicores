@@ -10,7 +10,7 @@
 namespace AspLicores {
     
     
-    public partial class AdminMaster {
+    public partial class SiteMaster {
         
         /// <summary>
         /// MainContent control.
