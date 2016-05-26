@@ -201,7 +201,11 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="AdminPage.aspx" />
+    <Content Include="img\check.png" />
+    <Content Include="img\cross1.png" />
+    <Content Include="img\cross.png" />
+    <Content Include="img\lapiz.png" />
+    <Content Include="pags\AdminPage.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -244,6 +248,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="img\exportar_datos.png" />
+    <Content Include="img\productos.png" />
+    <Content Include="img\User_icon.png" />
+    <Content Include="pags\CtrLicores.aspx" />
+    <Content Include="pags\CtrUsuarios.aspx" />
+    <Content Include="pags\Mi_Cuenta.aspx" />
     <Content Include="Sesion.aspx" />
     <EntityDeploy Include="Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -253,6 +263,7 @@
       <DependentUpon>Model.edmx</DependentUpon>
     </Content>
     <Content Include="PrincipalSesion.Master" />
+<<<<<<< HEAD
     <Content Include="Admin.Master" />
     <Content Include="Content\sweetalert-master\bower.json" />
     <Content Include="Content\sweetalert-master\dev\sweetalert.scss" />
@@ -265,6 +276,10 @@
     <Content Include="Content\sweetalert-master\themes\twitter\twitter.scss" />
     <Content Include="Content\sweetalert-master\_editorconfig" />
     <Content Include="Content\sweetalert-master\_jshintrc" />
+=======
+    <Content Include="img\Duff_Man.png" />
+    <Content Include="pags\Admin.Master" />
+>>>>>>> origin/juanjo
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -432,18 +447,11 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin.Master.cs">
-      <DependentUpon>Admin.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin.Master.designer.cs">
-      <DependentUpon>Admin.Master</DependentUpon>
-    </Compile>
-    <Compile Include="AdminPage.aspx.cs">
+    <Compile Include="pags\AdminPage.aspx.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminPage.aspx.designer.cs">
+    <Compile Include="pags\AdminPage.aspx.designer.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -499,6 +507,34 @@
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="pags\CtrLicores.aspx.cs">
+      <DependentUpon>CtrLicores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pags\CtrLicores.aspx.designer.cs">
+      <DependentUpon>CtrLicores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pags\CtrUsuarios.aspx.cs">
+      <DependentUpon>CtrUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pags\CtrUsuarios.aspx.designer.cs">
+      <DependentUpon>CtrUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pags\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pags\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pags\Mi_Cuenta.aspx.cs">
+      <DependentUpon>Mi_Cuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pags\Mi_Cuenta.aspx.designer.cs">
+      <DependentUpon>Mi_Cuenta.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PrincipalSesion.Master.cs">
       <DependentUpon>PrincipalSesion.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
