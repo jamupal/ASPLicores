@@ -57,7 +57,7 @@
             <div class="col-md-10">
                 <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Password"
-                    CssClass="text-danger" ErrorMessage="El campo de contraseña es obligatorio." />
+                    CssClass="text-danger" ErrorMessage="La contraseña es requerida" />
             </div>
         </div>
         <div class="form-group">
@@ -65,9 +65,9 @@
             <div class="col-md-10">
                 <asp:TextBox runat="server" ID="ConfirmPassword" TextMode="Password" CssClass="form-control" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="ConfirmPassword"
-                    CssClass="text-danger" Display="Dynamic" ErrorMessage="El campo de confirmación de contraseña es obligatorio." />
+                    CssClass="text-danger" Display="Dynamic" ErrorMessage="The confirm password field is required." />
                 <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword"
-                    CssClass="text-danger" Display="Dynamic" ErrorMessage="La contraseña y la contraseña de confirmación no coinciden." />
+                    CssClass="text-danger" Display="Dynamic" ErrorMessage="La contraseña y la confirmacion no coinciden" />
             </div>
         </div>
         <div class="form-group">
