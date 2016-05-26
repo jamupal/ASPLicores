@@ -44,6 +44,7 @@
     <Property Name="username" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="password" Type="varchar(max)" Nullable="false" />
     <Property Name="perfil_usuario" Type="int" Nullable="false" />
+    <Property Name="Estado" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="FK_detalle_Factura_factura">
     <End Role="factura" Type="Self.factura" Multiplicity="1" />

@@ -11,7 +11,17 @@ namespace AspLicores
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!IsPostBack)
+            {
 
+                if (Session["registro"] != null)
+                {
+                    lblMensaje.Text = "Su registro ha sido exitoso, Por favor inicie sesión con su usuario y contraseña";
+                }
+
+                lblMensaje.Visible = false;
+                Session["registro"] = null;
+            }
         }
     }
 }

@@ -50,6 +50,7 @@
     <Property Name="password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="perfil_usuario" Type="Int32" Nullable="false" />
     <NavigationProperty Name="factura" Relationship="Self.FK_factura_usuario" FromRole="usuario" ToRole="factura" />
+    <Property Name="Estado" Type="Int32" Nullable="false" />
   </EntityType>
   <Association Name="FK_detalle_Factura_factura">
     <End Role="factura" Type="Self.factura" Multiplicity="1" />
